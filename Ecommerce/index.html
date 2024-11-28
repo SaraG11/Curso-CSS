@@ -7,36 +7,42 @@
     <title>Aprendiendo HTML</title>
 </head>
 <body>
-    <header>
-        <h1>Tienda Muebles</h1>
+    <header class="nombre-sitio">
+        <h1>Tienda <span>Muebles</span>
     </header>
-
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="blog.html">Blog</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav></h1>
+    </div>
+    
+    <div class="hero"></div>
     <!-- seccion de enlaces de categorias-->
-    <section>
-        <h3>Categorias de Productos</h3>
-        <div>
-            <img src="img/categoria1.jpg" alt="Imagen Categoria">
-            <a href="#">Oficina</a>
-        </div>
-        <div>
-            <img src="img/categoria2.jpg" alt="Imagen Categoria">
-            <a href="#">Hogar</a>
-        </div>
-        <div>
-            <img src="img/categoria3.jpg" alt="Imagen Categoria">
-            <a href="#">Cocina</a>
+    <section class="contenedor">
+        <h3>Categorias de <span>Productos</span></h3>
+        
+        <div class="listado-categorias">
+            <div>
+                <img src="img/categoria1.jpg" alt="Imagen Categoria">
+                <a href="#">Oficina</a>
+            </div>
+            <div>
+                <img src="img/categoria2.jpg" alt="Imagen Categoria">
+                <a href="#">Hogar</a>
+            </div>
+            <div>
+                <img src="img/categoria3.jpg" alt="Imagen Categoria">
+                <a href="#">Cocina</a>
+            </div>
         </div>
     </section>
    
-    <section>
+    <section class="sobre-nosotros">
         <div>
             <h2>Sobre Nosotros</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vero ex facilis esse asperiores tempore, expedita rerum neque sit ipsa!</p>
