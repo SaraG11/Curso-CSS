@@ -20,7 +20,6 @@ h1{
     font-size: 4rem;
 }
 h2{
-    text-align: center;
     font-size: 2.8rem;
 }
 h3{
@@ -38,9 +37,30 @@ img{
     max-width: 100%;
     display: block;
 }
+.btn{
+    background-color: #8cbc00;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out ;
+    -webkit-transition: background-color .3s ease-out ;
+    -moz-transition: background-color .3s ease-out ;
+    -ms-transition: background-color .3s ease-out ;
+    -o-transition: background-color .3s ease-out ;
+}
 
+.btn:hover{
+    background-color: #769c02;
+}
 /* Utilidades */
-
+.text-center{
+    text-align: center;
+}
+.producto{
+    background-color: #037bc0;
+}
 
 
 /* header y navegacion */
@@ -108,6 +128,61 @@ img{
 }
 
 /* listado de productos */
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+.producto:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) img{
+    height: 43rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
 .contenido-principal{
     padding-top: 5rem;
 }
+.text-producto{
+    text-align: center;
+    color: #fff;
+    padding: 3rem;
+}
+/* .text-producto h3{
+    margin: 0;
+} */
+/* .text-producto p{
+    margin: 0 0 .6rem 0;
+} */
+.text-producto .precio{
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+
+
+
